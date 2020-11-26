@@ -1,0 +1,12 @@
+<%- layout('layouts/main') %>
+<link rel="stylesheet" href="/css/login-styles.css">
+<div class="content">
+	<form action="/signin" method="POST" class="login">
+	  <input type="email" name="email" placeholder="Nombre de usuario/eMail">
+	  <input type="password" name="password" placeholder="Contraseña">
+    <br>
+	  <button type="submit" class="btn-login">
+	    Iniciar sesión
+	  </button>
+	</form>
+</div>

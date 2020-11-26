@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nodejs Passport Local</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <% if (!user) { %>
+  <a href="/signin" class="href">Signin</a>
+  <a href="/signup" class="href">Signup</a>
+  <% } else { %>
+  <a href="/logout">Logout</a>
+  <a href="/profile">Profle</a>
+  <% } %>
+
+  <%if (signinMessage) {%>
+    <p><%= signinMessage %></p>
+  <% } %>
+  <%if (signupMessage) {%>
+    <p><%= signupMessage %></p>
+  <% } %>
+
+  <%- body %>
+</body>
+</html>
